@@ -1,0 +1,1646 @@
+@font-face {
+    font-family: Kebook;
+    src: url(../fonts/Nunito-Regular.ttf);
+}
+@font-face {
+    font-family: Kebook;
+    src: url(../fonts/Nunito-ExtraLight.ttf);
+    font-weight: 100;
+}
+@font-face {
+    font-family: Kebook;
+    src: url(../fonts/Nunito-ExtraLight.ttf);
+    font-weight: 200;
+}
+@font-face {
+    font-family: Kebook;
+    src: url(../fonts/Nunito-Light.ttf);
+    font-weight: 300;
+}
+@font-face {
+    font-family: Kebook;
+    src: url(../fonts/Nunito-Regular.ttf);
+    font-weight: 400;
+}
+@font-face {
+    font-family: Kebook;
+    src: url(../fonts/Nunito-Regular.ttf);
+    font-weight: 500;
+}
+@font-face {
+    font-family: Kebook;
+    src: url(../fonts/Nunito-SemiBold.ttf);
+    font-weight: 600;
+}
+@font-face {
+    font-family: Kebook;
+    src: url(../fonts/Nunito-Bold.ttf);
+    font-weight: 700;
+}
+@font-face {
+    font-family: Kebook;
+    src: url(../fonts/Nunito-ExtraBold.ttf);
+    font-weight: 800;
+}
+@font-face {
+    font-family: Kebook;
+    src: url(../fonts/Nunito-Black.ttf);
+    font-weight: 900;
+}
+* {
+    font-family: "Kebook", Arial, sans-serif;
+    font-size: 17px;
+}
+html {
+    height: 100%;
+}
+body {
+    position: relative;
+    padding-bottom: 79.69px;
+    min-height: 100%;
+}
+footer {
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+h1,
+.h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+h2,
+.h2 {
+    font-size: 2rem;
+    font-weight: 900;
+}
+h3,
+.h3 {
+    font-size: 1.7rem;
+    font-weight: bold;
+}
+h4,
+.h4 {
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+h5,
+.h5 {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+h6,
+.h6 {
+    font-size: 1rem;
+    font-weight: bold;
+}
+.player_vendas {
+    background: url(../images/thumbnail.png);
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 1rem;
+    overflow: hidden;
+}
+.player_vendas:before {
+    background: #000;
+    opacity: 0.4;
+}
+.player_vendas .img_player,
+.player_vendas svg {
+    opacity: 1;
+}
+.player_vendas_play .img_player,
+.player_vendas_play svg {
+    opacity: 0;
+    transition: all 500ms;
+}
+.player_vendas_play iframe {
+    opacity: 0;
+    transition: all 500ms;
+}
+.video_aula_show .img_player,
+.video_aula_show svg {
+    opacity: 0;
+    transition: all 500ms;
+}
+.video_aula_show iframe {
+    opacity: 0;
+    transition: all 500ms;
+}
+.video_vendas_show:before {
+    opacity: 1;
+    transition: all 500ms;
+}
+.video_vendas_show iframe {
+    opacity: 1;
+    transition: all 500ms;
+}
+.video_aula_show:before {
+    opacity: 1;
+    transition: all 500ms;
+}
+.video_aula_show iframe {
+    opacity: 1;
+    transition: all 500ms;
+}
+.player_vendas .img_player {
+    width: 20rem;
+    height: 20rem;
+}
+.player_vendas .img_player img {
+    animation-name: spin;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+.player_vendas svg {
+    width: 15rem;
+    height: 15rem;
+    fill: #fff;
+}
+.header {
+    background: url(../images/back-top.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: top center;
+}
+.header .header_logo {
+    max-width: 300px;
+    width: auto;
+}
+.header ul {
+    direction: rtl;
+}
+.grupo_vip_bg {
+    background: url(../images/back-bot.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center;
+}
+.btn_member {
+    margin-left: 1rem;
+    border: 2px solid var(--cor-texto-1);
+    border-radius: 0rem 10rem 10rem !important;
+    background: transparent;
+    color: var(--cor-texto-1);
+    font-weight: bold;
+    transition: all 300ms;
+}
+.btn_member:hover,
+.btn_share:hover {
+    border-color: var(--cor-texto-1);
+    background: var(--cor-texto-1);
+    color: var(--cor-1);
+    transition: all 300ms;
+}
+.btn_member:hover a,
+.btn_share:hover a {
+    color: var(--cor-1);
+    transition: all 300ms;
+}
+.btn_member a,
+.btn_share a {
+    color: var(--cor-texto-1);
+    text-decoration: none;
+    transition: all 300ms;
+    cursor: pointer;
+}
+.btn_share {
+    margin-left: 1rem;
+    border: 2px solid var(--cor-texto-1) !important;
+    border-radius: 10rem 0rem 10rem 10rem !important;
+    background: transparent;
+    color: var(--cor-texto-1);
+    font-weight: bold;
+    transition: all 300ms;
+    cursor: pointer;
+}
+@media (max-width: 356px) {
+    .btn_member,
+    .btn_share {
+        padding: 0.3rem;
+        margin-bottom: 0.5rem;
+    }
+}
+.header h2 {
+    font-weight: 900;
+    color: var(--cor-texto-1);
+    font-size: 2.2rem;
+}
+.header .sub_title {
+    color: var(--cor-texto-1);
+    font-size: 1.3rem;
+}
+.btn_price a {
+    background: var(--cor-1);
+    color: var(--cor-texto-btn-1);
+    display: inline-block;
+    text-decoration: none;
+    line-height: 1;
+    padding: 0.7rem 2.5rem;
+    border-radius: 10rem;
+    font-weight: bold;
+    font-size: 1.4rem;
+    transition: all 600ms;
+}
+.btn_price a span {
+    font-weight: normal;
+    font-size: 0.9rem;
+}
+.btn_price a:hover {
+    background: var(--cor-2);
+    color: var(--cor-texto-btn-2);
+    transition: all 600ms;
+}
+.headerLancamento p {
+    color: var(--cor-texto-1);
+}
+.headerLancamento .card p {
+    color: initial;
+}
+.headerLancamento {
+    background-size: cover;
+    padding-bottom: 0 !important;
+    margin-bottom: 7rem;
+}
+.headerLancamento .card {
+    box-shadow: rgb(0 0 0 / 50%) 0 0 20px -5px;
+    margin-top: 2rem;
+    padding: 3rem 0rem;
+    margin-bottom: -5rem;
+}
+.btn_list a {
+    background: var(--cor-2);
+    color: var(--cor-texto-2) !important;
+    padding: 1.3rem 2.5rem;
+    cursor: pointer;
+}
+.btn_list a:hover {
+    background: var(--cor-1);
+    color: var(--cor-texto-1);
+}
+.btn_cap a {
+    background: var(--cor-1);
+    color: var(--cor-texto-btn-1) !important;
+    font-size: 28px;
+    font-weight: 900;
+    padding: 1.8rem 2.5rem;
+    cursor: pointer;
+}
+.btn_cap a:hover {
+    background: var(--cor-2);
+    color: var(--cor-texto-btn-2) !important;
+}
+
+.price_btn {
+    font-size: 2rem;
+    font-weight: 900;
+    line-height: 1;
+}
+.price_btn small {
+    font-size: 1.2rem;
+    line-height: 1;
+    vertical-align: super;
+    font-weight: bold;
+}
+.price_btn span {
+    font-size: 1.5rem;
+}
+.price_btn s {
+    color: #aaa;
+    font-size: 1.1rem;
+    vertical-align: baseline;
+    font-weight: normal;
+}
+.price_jurus {
+    color: #aaa;
+}
+.price_now {
+    font-style: italic;
+    color: #777;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+.professor .conteudo_professor p:nth-child(1),
+.curso .conteudo_curso p:nth-child(1) {
+    font-weight: bold;
+}
+.professor .conteudo_professor p:nth-child(1):after,
+.curso .conteudo_curso p:nth-child(1):after {
+    content: "";
+    display: block;
+    background: var(--cor-1);
+    width: 3rem;
+    height: 0.2rem;
+    margin: 0.3rem 0 0 auto;
+}
+.professor .conteudo_professor p,
+.curso .conteudo_curso p {
+    margin-bottom: 0.5rem;
+}
+.conteudo_professor,
+.conteudo_curso {
+    max-height: 15rem;
+    margin-bottom: 0.5rem;
+    overflow: hidden;
+}
+.professor a,
+.curso a {
+    text-decoration: none;
+    font-weight: bold;
+}
+.professor a svg,
+.curso a svg {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+#professorCanvas,
+#cursoCanvas {
+    height: 80vh;
+}
+.curso .conteudo_curso p:nth-child(1):after {
+    margin: 0.3rem auto 0 0;
+}
+.atencao_captura,
+.assista_video,
+.curso,
+.infos_curso,
+.curso_conteudo,
+.bonus_premium,
+.plataforma_curso,
+.garantia_curso,
+.result_curso,
+.curso_oferta,
+.faq_curso,
+.nao_feche,
+.duvida_obrigado,
+.cronogramaLista,
+.back_cinza,
+.back_cinza .glider-slide {
+    background: #f5f7f8;
+}
+.perfil_comprador img {
+    width: auto;
+    margin: 0 auto 0.5rem;
+}
+.perfil_comprador h3 {
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: bold;
+    line-height: 1;
+}
+.perfil_comprador .card {
+    padding: 4rem 2rem;
+    border: 1px solid transparent;
+    box-shadow: rgb(0 0 0 / 50%) 0 0 20px -5px;
+    border-radius: 1rem;
+}
+.infos_curso img {
+    max-height: 13rem;
+}
+.aprender_curso {
+    background: url(../images/back-how.png);
+    background-position: center;
+    background-size: cover;
+}
+.aprender_curso h2,
+.aprender_curso h3,
+.aprender_curso p {
+    color: var(--cor-texto-1);
+}
+.check_curso {
+    background: url(../images/back-check.png);
+}
+.check_curso h2 {
+    color: var(--cor-texto-1);
+}
+.check_curso li {
+    list-style: none;
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: var(--cor-texto-1);
+}
+.check_curso svg {
+    width: 1.5rem;
+    height: 1.5rem;
+    vertical-align: middle;
+    fill: var(--cor-texto-1);
+}
+.card_curso img {
+    max-height: 102px;
+    height: auto;
+    max-width: 100px;
+    width: auto;
+    margin: 0 auto;
+}
+.card_curso .card h3 {
+    font-size: 1.3rem;
+    margin-top: 1rem;
+}
+.card_curso .card {
+    margin-bottom: 1rem;
+    padding: 2rem;
+    border: 0.7rem solid #eee;
+    border-radius: 0;
+}
+.card_curso .card p {
+    margin-bottom: 0;
+    font-size: 0.9rem;
+}
+.plataforma_curso svg {
+    width: 3rem;
+    height: 3rem;
+    fill: var(--cor-1);
+}
+
+.case_curso h2 {
+    font-weight: bold;
+}
+.case_curso h2 span {
+    font-weight: 900;
+    font-size: 2rem;
+}
+.pack_curso span {
+    font-size: 1.3rem;
+    font-weight: 900;
+    margin-bottom: 0.3rem;
+    background: #fff;
+    z-index: 1;
+    padding: 0 0.5rem;
+    text-align: left;
+}
+.pack_curso span s {
+    font-size: 1.3rem;
+    text-decoration-color: var(--cor-1);
+}
+.pack_curso span svg {
+    fill: var(--cor-1);
+    width: 1.5rem;
+    height: 1.5rem;
+}
+.pack_curso .content_pack_curso {
+    position: relative;
+}
+.divider {
+    margin-bottom: 1.2rem !important;
+    flex-grow: 1;
+    border-bottom: 2px solid black;
+    margin: 5px;
+}
+/* .pack_curso .content_pack_curso:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    top: 40%;
+    border-bottom: 2px solid;
+    z-index: 0;
+} */
+.preco_pack {
+    color: var(--cor-1);
+    position: relative;
+    padding-top: 1rem;
+    padding-left: 1rem;
+    width: fit-content;
+    margin: 1rem auto 0;
+    font-weight: bold;
+    line-height: 1;
+}
+.preco_pack s {
+    font-size: 2.5rem;
+}
+.preco_pack small {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.curso_oferta p,
+.curso_oferta p s,
+.curso_oferta p b {
+    font-size: 1.5rem;
+    line-height: 1;
+}
+.curso_oferta p b {
+    font-weight: 900;
+}
+.curso_oferta h2,
+.curso_oferta p.h2 {
+    color: var(--cor-1);
+    font-weight: 900;
+    font-size: 2rem;
+}
+.curso_oferta .h4 {
+    font-weight: normal;
+    font-size: 1.3rem;
+}
+.curso_oferta a {
+    text-decoration: none;
+    font-size: 2rem;
+    margin: 1rem 0 2rem;
+    display: inline-block;
+    padding: 1rem 3rem;
+    background: var(--cor-1);
+    color: var(--cor-texto-1);
+    border-radius: 5rem;
+    font-weight: bold;
+}
+.curso_oferta a:hover {
+    background: var(--cor-2);
+    color: var(--cor-texto-2);
+}
+.opcao_curso h3 {
+    color: var(--cor-1);
+    font-size: 1.5rem;
+}
+.opcao_curso1 {
+    background: url(../images/icon-number-1.png);
+}
+.opcao_curso2 {
+    background: url(../images/icon-number-2.png);
+}
+.opcao_curso3 {
+    background: url(../images/icon-number-3.png);
+}
+.opcao_curso1,
+.opcao_curso2,
+.opcao_curso3 {
+    background-repeat: no-repeat;
+    background-size: auto 80%;
+    background-position: left center;
+}
+.disclaimer_curso svg {
+    height: auto;
+    width: 100%;
+    fill: #ccc;
+}
+.disclaimer_curso .card {
+    border-radius: 0.5rem;
+    border: 2px solid #ddd;
+}
+.copy_section p,
+.copy_section a {
+    color: var(--cor-texto-footer) !important;
+    font-size: 0.8rem;
+}
+
+footer .copy_section {
+    background: var(--cor-footer);
+}
+footer h3 {
+    font-size: 1.5rem;
+}
+
+footer a,
+footer span {
+    color: var(--cor-texto-footer);
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: var(--cor-geral-texto);
+    font-weight: bold;
+}
+.footer-item {
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: bold;
+}
+footer .social li svg {
+    width: 100%;
+    height: auto;
+    fill: #fff;
+}
+footer .social li {
+    width: 2rem;
+    height: 2rem;
+    background: var(--cor-geral-texto);
+    margin: 0 0.4rem;
+    padding: 0.2rem 0.4rem;
+    border-radius: 4rem;
+}
+footer .logo_kebook_footer {
+    width: 4rem;
+    height: auto;
+    margin-top: -5.5px;
+}
+.glider-contain button {
+    border: 2px solid;
+    color: #aaa;
+    background: transparent;
+    line-height: 0;
+    padding: 0.5rem;
+    font-size: 2rem;
+    position: absolute;
+    top: 45%;
+}
+.glider-contain button:hover {
+    color: var(--cor-texto-1);
+    border-color: var(--cor-1);
+    background-color: var(--cor-1);
+}
+.glider-contain button svg {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+.glider-contain button:nth-child(2) {
+    left: -3.5rem;
+}
+.glider-contain button:nth-child(3) {
+    right: -3.5rem;
+}
+.play_case::before {
+    background: var(--cor-1);
+}
+.play_case svg {
+    width: 3rem;
+    height: 3rem;
+    color: #fff;
+    border-radius: 10rem;
+    background: rgb(255 255 255 / 60%);
+    padding-left: 0.3rem;
+    outline: 0.5rem solid rgb(255 255 255 / 30%);
+}
+.case_p {
+    font-size: 2rem;
+    font-weight: 900;
+}
+.bonus_curso .card {
+    border-radius: 2rem;
+    padding: 2rem;
+    border: 0;
+    box-shadow: rgb(0 0 0 / 50%) 0 0 20px -5px;
+    margin: 1rem auto;
+}
+.bonus_curso .card h3 {
+    font-weight: 900;
+    margin: 0;
+}
+.bonus_curso .card p {
+    line-height: 1;
+}
+.bonus_curso .card s {
+    text-decoration-color: #c60000;
+}
+.bonus_curso .card i {
+    color: #999;
+    font-weight: bold;
+}
+.bonus_curso .card .red {
+    color: #c60000;
+}
+.bonus_curso .img_left_bonus div .col-12:nth-child(1) {
+    order: 1;
+}
+#accordionContent button:after {
+    display: none;
+}
+.icon_content {
+    width: 1.3rem;
+    display: inline-block;
+    vertical-align: text-top;
+}
+#accordionContent .accordion-item,
+#accordionContent button {
+    border: 0;
+    background-color: transparent;
+    color: var(--cor-geral-texto);
+    box-shadow: none;
+}
+#accordionContent button.collapsed .icon_content svg:nth-child(2),
+#accordionContent button .icon_content svg:nth-child(1) {
+    display: none;
+}
+#accordionContent button.collapsed .icon_content svg:nth-child(1),
+#accordionContent button .icon_content svg:nth-child(2) {
+    display: block;
+}
+#accordionContent .accordion-item {
+    border-bottom: 2px solid var(--cor-1);
+    border-radius: 0;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+}
+#accordionContent .accordion-body {
+    padding-bottom: 0;
+}
+.accordion-body .aula_content {
+    margin-bottom: 0;
+    border-top: 1px solid;
+    margin-top: 0.7rem;
+    padding-top: 0.3rem;
+}
+.btn_conteudo {
+    border: 2px solid var(--cor-1);
+    background: transparent;
+    border-radius: 0.5rem;
+    line-height: 1;
+    padding: 0.5rem 1rem;
+    font-weight: bold;
+}
+.btn_conteudo:hover {
+    background: var(--cor-1);
+    border-color: var(--cor-1);
+    color: var(--cor-texto-1);
+}
+.clicked {
+    cursor: default;
+    pointer-events: none;
+}
+.back_branco {
+    background-color: #fff;
+}
+button.btn_vm {
+    margin: 0 auto;
+    text-align: center;
+    background: var(--cor-1) !important;
+    display: block;
+    color: var(--cor-texto-1) !important;
+    border-radius: 5rem;
+    padding: 0.5rem 2rem;
+    font-weight: bold;
+}
+button.btn_vm:hover {
+    background: var(--cor-2) !important;
+    color: var(--cor-texto-2) !important;
+}
+.faq_curso .accordion-item {
+    background: transparent;
+    border: 3px solid;
+    border-radius: 0;
+    margin-bottom: 1rem;
+}
+.faq_curso .accordion-item button {
+    color: var(--cor-geral-texto);
+    background: transparent;
+    border-bottom: 0px solid;
+    border-radius: 0;
+    box-shadow: none;
+    outline: none;
+    font-weight: bold;
+}
+.faq_curso .accordion-item button::after {
+    display: none;
+}
+.faq_curso .accordion-item .accordion-body {
+    padding-top: 0;
+}
+.faq_curso .accordion-item .accordion-body p:last-child {
+    margin: 0;
+}
+
+#shareModal li {
+    border: 0;
+    padding: 0 0.5rem;
+}
+#shareModal li a {
+    color: var(--cor-texto-1);
+    background: var(--cor-1);
+    width: 2rem;
+    height: 2rem;
+    display: block;
+    padding: 0.45rem 0.45rem;
+    border-radius: 10rem;
+}
+#shareModal li a:hover {
+    color: var(--cor-texto-2);
+    background: var(--cor-2);
+}
+#shareModal li a svg {
+    display: block;
+    margin: auto;
+    width: 100%;
+    height: auto;
+}
+@media (max-width: 576px) {
+    #shareModal .modal-body {
+        column-count: 7;
+    }
+    #shareModal li a {
+        width: 1.8rem;
+        height: 1.8rem;
+    }
+}
+.fix_player {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    width: 300px;
+    z-index: 2;
+}
+.fix_player .img_player {
+    width: 8rem;
+    height: 8rem;
+}
+.fix_player svg {
+    width: 6rem;
+    height: 6rem;
+}
+.fix_close {
+    padding: 0;
+    line-height: 0;
+    border: 0;
+    background: #fff;
+    position: fixed;
+    right: 0.5rem;
+    top: 0.5rem;
+    z-index: 1;
+    border-radius: 10rem;
+    display: none;
+}
+.fix_close svg {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+.fix_player .fix_close {
+    display: block;
+}
+#modalDepos button.btn-close,
+#modalResult button.btn-close {
+    position: absolute;
+    top: -0.5rem;
+    right: -0.5rem;
+    background: #fff;
+    border-radius: 10rem;
+    opacity: 1;
+    width: 1.5rem;
+    height: 1.5rem;
+    text-align: center;
+    padding: 0;
+}
+#modalDepos button.btn-close svg,
+#modalResult button.btn-close svg {
+    display: block;
+    width: 1.5rem;
+    height: 1.5rem;
+}
+#modalVideoDepo img,
+#modalVideoCase img {
+    width: auto;
+}
+.modalClick {
+    cursor: pointer;
+}
+.header_obrigado {
+    background: var(--cor-1);
+}
+.header_obrigado_captura,
+.header_termos {
+    background: url(../images/back-top.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    padding: 2.5rem 0 2.5rem 0;
+}
+.nao_feche p {
+    font-size: 1.2rem;
+    margin-bottom: 0.4rem;
+}
+.nao_feche h2 {
+    font-weight: 700 !important;
+}
+.nao_feche h3 {
+    font-weight: 900;
+    font-size: 2.2rem;
+}
+.card_obrigado .font_obrigado {
+    font-size: 1.2rem;
+}
+.card_obrigado .card {
+    border: 0;
+}
+.card_obrigado h2 {
+    font-weight: 800;
+}
+.card_obrigado h3 {
+    font-size: 2.3rem;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+.card_obrigado a {
+    font-size: 1.3rem;
+    background: var(--cor-1);
+    color: var(--cor-texto-1);
+    text-decoration: none;
+    font-weight: 900;
+    padding: 0.5rem 2rem;
+    border-radius: 0.5rem;
+    display: inline-block;
+    width: fit-content;
+    margin: 0 auto;
+    line-height: 2;
+}
+.card_obrigado a:hover {
+    background: var(--cor-2);
+    color: var(--cor-texto-2);
+}
+.card_obrigado h2 span {
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: 900;
+}
+.duvida_obrigado .btn {
+    font-size: 1.3rem;
+    background: #25d366;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 900;
+    padding: 0.5rem 2rem;
+    border-radius: 0.5rem;
+    display: inline-block;
+    width: fit-content;
+    margin: 0 auto;
+    line-height: 2;
+}
+.duvida_obrigado .btn:hover {
+    background: #128c7e;
+}
+
+.assista_video .btn {
+    background-color: #000;
+    border-radius: 50rem;
+    color: #fff;
+    font-weight: 700;
+    width: 13rem;
+}
+.assista_video .btn:hover {
+    background-color: #ff6f00;
+}
+
+.download_material .btn {
+    font-size: 20px;
+    padding: 1rem;
+}
+
+.duvida_obrigado p {
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+.duvida_obrigado .btn svg {
+    width: 1.5rem;
+    height: 1.5rem;
+    vertical-align: sub;
+}
+.atencao_obrigado .card {
+    border: 2px solid;
+    border-radius: 0.5rem;
+}
+.atencao_obrigado .card svg {
+    width: 3rem;
+    height: 3rem;
+}
+.atencao_obrigado .card p {
+    font-weight: bold;
+}
+.encerrado_header {
+    min-height: 100vh;
+    background-size: cover;
+    color: #fff;
+}
+.encerrado_header .card {
+    max-width: 300px;
+    margin: 15vh auto 0;
+    background: #262525;
+    padding: 2rem;
+}
+#modalCase img {
+    width: auto;
+    transform: translateX(40%);
+}
+#shareModal #url {
+    width: 0;
+    height: 0;
+    opacity: 0;
+    position: absolute;
+}
+.headerLateral {
+    background-size: cover;
+    color: var(--cor-texto-1);
+}
+.headerLateral .price_btn s,
+.headerLateral .price_now,
+.headerLateral .price_jurus {
+    color: var(--cor-texto-1);
+}
+.headerLateral .btn_price a {
+    background-color: var(--cor-2);
+}
+.headerLateral .btn_price a:hover {
+    background-color: var(--cor-1);
+}
+.headerLateral .btn_price {
+    width: fit-content;
+    text-align: center;
+}
+.playAulaVendas svg {
+    width: 10rem;
+    height: 10rem;
+}
+.playAulaVendas .img_player {
+    width: 13rem;
+    height: 13rem;
+}
+.faqLancamento button.collapsed span {
+    transform: rotate(180deg);
+    transition: all 600ms;
+}
+.faqLancamento button.collapsed span:nth-child(1) {
+    transform: rotate(90deg);
+    transition: all 600ms;
+}
+.faqLancamento button span,
+.faqLancamento button span:nth-child(1) {
+    transform: rotate(0deg);
+    transition: all 600ms;
+    background: #000;
+    position: absolute;
+    width: 1rem;
+    height: 2px;
+    right: 1rem;
+}
+.cronogramaLista h3 {
+    font-size: 1.4rem;
+    margin: 0.5rem 0;
+}
+.cronogramaLista .card {
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border: 0;
+    background: #fff;
+}
+#listaEspera button.btn-close,
+#garantirCaptura button.btn-close {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    width: 0.5rem;
+    height: 0.5rem;
+}
+#listaEspera p {
+    color: var(--cor-geral-texto);
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+#listaEspera label,
+#garantirCaptura label {
+    color: var(--cor-geral-texto);
+    margin-bottom: 0;
+}
+#listaEspera button.btn {
+    width: 100%;
+    border-radius: 5rem;
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: var(--cor-texto-1);
+    background: var(--cor-1);
+    border: 0;
+}
+
+#listaEspera button.btn:hover {
+    color: var(--cor-texto-2);
+    background: var(--cor-2);
+}
+#garantirCaptura p {
+    font-size: 18px;
+}
+
+#garantirCaptura label {
+    font-size: 17px;
+    font-weight: bolder;
+    color: #6f7275;
+}
+
+#garantirCaptura .form-control {
+    padding: 0.7rem 0.75rem;
+}
+
+#garantirCaptura button.btn {
+    width: 100%;
+    padding: 0.7rem;
+    font-size: 1.5rem;
+    font-weight: 900;
+    color: var(--cor-texto-1);
+    background: #3cb86c;
+    border: 0;
+}
+
+#garantirCaptura .modal-content {
+    padding: 2rem;
+    border-radius: 1rem;
+}
+.playerConfirm .player_vendas .img_player {
+    width: 12rem;
+    height: 12rem;
+}
+.playerConfirm .player_vendas svg {
+    width: 11rem;
+    height: 11rem;
+}
+.topConfirmacao {
+    background: #eeeeee;
+}
+.topConfirmacao h3 {
+    font-weight: 900;
+}
+.linkGrupoConfirmacao {
+    display: block;
+    width: fit-content;
+    padding: 1rem 1.5rem;
+    border-radius: 10rem;
+    font-size: 1.3rem;
+    text-decoration: none;
+    color: #fff;
+    background: #000;
+}
+.linkGrupoConfirmacao:hover {
+    color: #fff;
+    background: #333;
+}
+.linkGrupoConfirmacao img {
+    width: 2.3rem;
+    height: auto;
+    margin-right: 0.5rem;
+}
+.contentVip h2 span {
+    font-size: 2rem;
+    font-weight: 900;
+    background: #fda80a;
+    padding-right: 0.3rem;
+}
+.contentVip h3 {
+    font-weight: 900;
+    margin-bottom: 1rem;
+}
+.contentVip img {
+    margin-bottom: 1rem;
+}
+.contentVip h4 {
+    font-weight: 900;
+}
+.contentVip .card {
+    border: 0;
+    box-shadow: rgb(0 0 0 / 50%) 0 0 20px -5px;
+    border-radius: 2rem;
+    padding: 1rem 0;
+}
+.priceVip {
+    background: #eeeeee;
+}
+.priceVip a {
+    background: var(--cor-1);
+    padding: 0.8rem 1.5rem;
+    display: inline-block;
+    margin: 0.5rem 0 1rem;
+    border-radius: 2rem;
+    color: var(--cor-texto-1);
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.priceVip a:hover {
+    background: var(--cor-2);
+    color: var(--cor-texto-2);
+}
+.priceVip .card {
+    border: 0;
+    border-radius: 0.5rem;
+}
+.shareConfirmacao h2 b {
+    font-size: 2rem;
+    display: block;
+}
+.shareConfirmacao h2 {
+    font-size: 1.5rem;
+}
+.shareContentConfirmacao {
+    border: solid 2px #ccc;
+    padding: 1rem 0;
+    border-left: 0;
+    border-right: 0;
+}
+.playerConfirm .fix_player .img_player {
+    width: 8rem;
+    height: 8rem;
+}
+.playerConfirm .fix_player .player_vendas svg {
+    width: 6rem;
+    height: 6rem;
+}
+.linkGrupoConfirmacaoVideo {
+    margin: 0 auto;
+}
+.estiloConfirmacaoVideo b {
+    font-size: 1.5rem;
+    font-weight: 900;
+}
+.estiloConfirmacaoVideo a.linkGrupoConfirmacao {
+    width: 260px;
+    text-align: center;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    font-size: 1rem;
+}
+.estiloConfirmacao .linkGrupoConfirmacao,
+.estiloConfirmacaoVideo .linkGrupoConfirmacao {
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+}
+.estiloConfirmacao .linkGrupoConfirmacao {
+    margin: 0 auto;
+}
+.estiloConfirmacao .linkGrupoConfirmacao img,
+.estiloConfirmacaoVideo .linkGrupoConfirmacao img {
+    width: 1.5rem;
+}
+@media (min-width: 576px) {
+    #garantirCaptura .modal-dialog {
+        min-width: 535px;
+    }
+}
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+@media (max-width: 991.98px) {
+    .case_p {
+        font-size: 1.6rem;
+    }
+    .pack_curso span:nth-child(1) {
+        max-width: 100%;
+    }
+}
+@media (max-width: 575.98px) {
+    .header h2 {
+        font-size: 2rem;
+        line-height: 1;
+    }
+    .player_vendas .img_player {
+        width: 10rem;
+        height: 10rem;
+    }
+    .player_vendas svg {
+        width: 8rem;
+        height: 8rem;
+    }
+    .professor .conteudo_professor p:nth-child(1):after,
+    .curso .conteudo_curso p:nth-child(1):after {
+        margin: 0.3rem 0 0;
+    }
+    .fix_player {
+        top: 2rem;
+        right: 2rem;
+    }
+    .fix_close {
+        right: 1.5rem;
+        top: 1.5rem;
+    }
+    .glider-contain button:nth-child(3) {
+        right: -1.5rem;
+    }
+    .glider-contain button:nth-child(2) {
+        left: -1.5rem;
+    }
+}
+.semanaTopo {
+    background: url(../images/back-top.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: top center;
+}
+.semanaTopo .aulasSemana .bi-play-circle-fill {
+    width: 80%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+.semanaTopo .aulasSemana .col-8 p:nth-child(1) {
+    font-weight: 900;
+    font-size: 1.3rem;
+    line-height: 1;
+}
+.semanaTopo .aulasSemana .col-8 p:nth-child(2) {
+    font-size: 0.8rem;
+    line-height: 1;
+    font-weight: 300;
+}
+.semanaTopo .aulasSemana .col-8 p:nth-child(3) {
+    line-height: 1;
+}
+.semanaTopo .aulasSemana .card {
+    border-radius: 0.5rem;
+    border: 0;
+    background: var(--cor-2);
+    color: var(--cor-texto-2);
+    transition: all 300ms;
+    cursor: pointer;
+}
+.semanaTopo .aulasSemana .card:hover,
+.semanaTopo .aulasSemana .disableShowAula {
+    background: var(--cor-1);
+    color: var(--cor-texto-1);
+}
+.semanaTopo .aulasSemana .disableShowAula {
+    cursor: default;
+    pointer-events: none;
+}
+.semanaTopo .aulasSemana .noDateAula {
+    background: var(--cor-2);
+    color: var(--cor-texto-2);
+}
+.noDateAula .card-body {
+    opacity: 0.5;
+}
+.logoSemana a {
+    display: block;
+    border: 2px solid #fff;
+    color: #fff !important;
+    padding: 0.3rem 1rem;
+    border-radius: 0.5rem;
+    width: max-content;
+    margin: 0.5rem 0 0.5rem auto;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1rem;
+}
+.logoSemana a:hover {
+    background: #fff;
+    color: var(--cor-2) !important;
+}
+.semanaTopo .aulasSemana h1 {
+    color: #fff;
+    font-size: 1.6rem;
+    margin: 1rem 0;
+}
+.semanaTopo .sobreSemana .card {
+    height: 100%;
+    border-radius: 0;
+    padding: 1rem;
+    border: 1px solid #ddd;
+}
+.sobreSemana a {
+    background: #000;
+    border-radius: 0.5rem;
+    padding: 0.5rem 1rem;
+    text-align: center;
+    width: fit-content;
+    line-height: 0;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 900;
+}
+.semanaGrupo h2 {
+    font-size: 2.5rem;
+}
+.semanaGrupo a {
+    background: #25d366;
+    color: #fff;
+    width: fit-content;
+    padding: 1rem 2rem;
+    border-radius: 0.5rem;
+    font-size: 1.4rem;
+    font-weight: 900;
+    text-decoration: none;
+}
+.semanaGrupo a:hover {
+    background: #128c7e;
+}
+.semanaGrupo svg {
+    width: 2.5rem;
+    height: 2.5rem;
+}
+.semanaGrupo .card {
+    border-radius: 0;
+    border: 1px solid #ddd;
+}
+.semanaHead {
+    background-color: var(--cor-2);
+}
+.logoSemana img {
+    width: 140px;
+    margin-top: 0.4rem;
+}
+div#changeVideo {
+    background: #000;
+}
+
+@media (max-width: 448px) {
+    body {
+        padding-bottom: 125px;
+    }
+}
+
+/* Termos */
+.btn_back a {
+    background: var(--cor-1);
+    color: var(--cor-texto-btn-1);
+    text-decoration: none;
+    line-height: 3;
+    padding: 1rem 2rem;
+    border-radius: 10rem;
+    font-weight: bold;
+    font-size: 0.8rem;
+    transition: all 600ms;
+}
+.btn_back span {
+    vertical-align: middle;
+}
+.btn_back a:hover {
+    background: var(--cor-2);
+    color: var(--cor-texto-btn-2);
+    transition: all 600ms;
+}
+
+.titulo_termos {
+    color: var(--cor-texto-1);
+}
+
+.conteudo_termos p,
+.conteudo_termos h4 {
+    margin-bottom: 1rem;
+}
+
+/* Expert */
+.header_expert,
+#conteudo_expert,
+#contato_expert {
+    background-color: #fdf5ef;
+    background: url(../images/back-top-expert.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: top center;
+}
+
+.header_expert .navbar-toggler-icon svg {
+    fill: var(--cor-1);
+    width: 100%;
+    height: 100%;
+}
+
+.header_expert .navbar-toggler:focus {
+    box-shadow: none;
+}
+
+.nav_items {
+    text-decoration: none;
+}
+.nav_items li a {
+    font-weight: 900;
+    font-size: 16px;
+    letter-spacing: 2px;
+    line-height: 2;
+    color: var(--cor-texto-1);
+}
+.nav_items li a:hover,
+.nav_items li a:focus {
+    color: var(--cor-texto-2);
+}
+
+.home_expert {
+    margin-top: 7rem;
+}
+.titulo_expert,
+.nome_expert {
+    font-weight: bold;
+}
+.expert_subtitle,
+.conteudo_subtitle {
+    font-weight: 900;
+    color: var(--cor-texto-2);
+    font-size: 17px;
+}
+.expert_title {
+    color: var(--cor-texto-1);
+    font-size: 59px;
+    line-height: 1;
+}
+.title_entre_contato {
+    color: var(--cor-texto-1);
+    font-size: 53px;
+    line-height: 1;
+}
+.conteudo_title {
+    color: var(--cor-texto-1);
+    font-size: 48px;
+    line-height: 1;
+}
+.desc_expert {
+    font-size: 20px;
+}
+.desc_expert_container {
+    max-height: 350px;
+    overflow: hidden;
+}
+.btn_categorias_conteudos {
+    border: 1px solid var(--cor-1);
+    border-radius: 50px;
+    color: var(--cor-texto-1);
+    font-weight: 900;
+    padding: 0.1rem 0.75rem;
+}
+.btn_categorias_conteudos:hover,
+.btn_categorias_conteudos:focus {
+    background: var(--cor-2);
+    border: 1px solid var(--cor-2);
+    color: var(--cor-texto-2);
+}
+
+.card_conteudo,
+.card_depoimentos {
+    border: 0;
+    border-radius: 0 0 1rem 1rem;
+    box-shadow: 0px 3px 30px #e9d1a852;
+    margin: 0 auto;
+    max-width: 25rem;
+    width: 100%;
+}
+
+.card_conteudo .btn_price a {
+    width: 100%;
+    padding: 1.1rem 0;
+    text-align: center;
+    font-size: 18px;
+}
+.card_conteudo h3,
+.card_conteudo p {
+    color: var(--cor-texto-1);
+    font-size: 26px;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+.card_conteudo .preco_riscado {
+    opacity: 0.43;
+}
+.card_conteudo .preco_a_vista {
+    font-size: 17px;
+    margin-bottom: 1rem;
+}
+.slider_conteudo .glider-slide {
+    background: none;
+}
+.card_depoimentos {
+    padding: 1.5rem;
+}
+.card_depoimentos svg {
+    fill: var(--cor-1);
+    max-width: 70px;
+    max-height: 70px;
+    height: 100%;
+    width: 100%;
+}
+
+.card_depoimentos .aluno_depo h5 {
+    color: var(--cor-texto-1);
+}
+.card_depoimentos .aluno_depo p {
+    color: var(--cor-texto-2);
+    font-weight: bold;
+}
+.form_contato_expert {
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0px 3px 30px #e9d1a852;
+}
+.form_border_expert {
+    border: 1px solid var(--cor-texto-2);
+    border-radius: 0;
+}
+.btn_enviar_expert {
+    background: var(--cor-texto-2);
+    color: #ffffff;
+    font-weight: bold;
+    border-radius: 0;
+    height: 4.3rem;
+}
+button.glider_prev_conteudo,
+button.glider_next_conteudo {
+    background: #dde5ec;
+    border: 0;
+    border-radius: 7px;
+    color: #ffffff;
+    max-width: 54px;
+    max-height: 54px;
+    height: 100%;
+    width: 100%;
+    z-index: 99;
+}
+#conheca_expert h1.expert_title {
+    font-size: 34px;
+}
+#conheca_expert a {
+    color: var(--cor-geral-texto);
+    font-size: 12px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* Utils */
+.fw-900 {
+    font-weight: 900 !important;
+}
